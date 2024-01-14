@@ -1,4 +1,4 @@
-package com.in28minutes.todo.rest;
+package com.in.todo.rest;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.in28minutes.model.Todo;
-import com.in28minutes.todo.service.TodoService;
+import com.in.model.Todo;
+import com.in.todo.service.TodoService;
 
 @RestController
 public class TodoRestController {
@@ -18,7 +18,7 @@ public class TodoRestController {
 
 	@RequestMapping(value = "/todo/", method = RequestMethod.GET)
 	public List<Todo> listAllTodos() {
-		List<Todo> users = service.retrieveTodos("in28Minutes");
+		List<Todo> users = service.retrieveTodos("John");
 		return users;
 	}
 

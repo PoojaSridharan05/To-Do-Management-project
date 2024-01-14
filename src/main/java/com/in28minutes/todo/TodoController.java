@@ -1,4 +1,4 @@
-package com.in28minutes.todo;
+package com.in.todo;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.in28minutes.model.Todo;
-import com.in28minutes.todo.service.TodoService;
+import com.in.model.Todo;
+import com.in.todo.service.TodoService;
 
 @Controller
 public class TodoController {
